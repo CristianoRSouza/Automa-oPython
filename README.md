@@ -1,5 +1,4 @@
 # Consultador de CEPs com ViaCEP
-==========================
 
 Um sistema automatizado para consultar endereços através da API ViaCEP, processar dados em CSV e gerar relatórios em PDF com confirmação por e-mail.
 
@@ -12,9 +11,6 @@ Um sistema automatizado para consultar endereços através da API ViaCEP, proces
 - Envio automático de confirmações por e-mail
 - Tratamento de erros e logs
 
-## Requisitos
--------------
-
 ### Bibliotecas Necessárias
 
 * `requests`: Para requisições à API ViaCEP
@@ -26,11 +22,12 @@ Um sistema automatizado para consultar endereços através da API ViaCEP, proces
 ### Configurações Iniciais
 
 1. Instale as dependências:
-   ```bash
+```
 pip install requests pandas fpdf python-dotenv
 ```
 
 2. Configure o arquivo `.env`:
+```
 makefile
 EMAIL_SENDER=seu_email@gmail.com
 EMAIL_PASSWORD=sua_senha_app
@@ -38,7 +35,7 @@ DESTINATARIO_PADRAO=destinatario@email.com
 ```
 
 3. Estrutura de diretórios necessária:
-   ```
+```
 data/
 ├── ceps_lista_30.csv  # Lista de CEPs para consulta
 └── resultados.csv     # Resultados das consultas
@@ -48,14 +45,14 @@ data/
 -------------
 
 1. Prepare o arquivo CSV de entrada (`ceps_lista_30.csv`) com uma coluna chamada "CEP":
-   ```csv
+```csv
 CEP
 01001-000
 01101-001
 ```
 
 2. Execute o programa:
-   ```bash
+```
 python main.py
 ```
 
