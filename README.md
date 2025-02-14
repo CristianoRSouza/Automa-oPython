@@ -31,7 +31,7 @@ pip install requests pandas fpdf python-dotenv
 ```
 
 2. Configure o arquivo `.env`:
-   ```makefile
+makefile
 EMAIL_SENDER=seu_email@gmail.com
 EMAIL_PASSWORD=sua_senha_app
 DESTINATARIO_PADRAO=destinatario@email.com
